@@ -11,7 +11,7 @@ import { ResponseInterceptor } from '@/common/interceptor/response.interceptor';
 import { GlobalExceptionFilter } from '@/common/exception-filter/global-exception.filter';
 
 @Module({
-  imports: [CustomConfigModule, EmailModule, UsersModule, AuthModule],
+  imports: [CustomConfigModule, UsersModule, AuthModule, EmailModule],
   controllers: [AppController],
   providers: [
     AppService,
